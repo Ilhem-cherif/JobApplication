@@ -1,0 +1,19 @@
+<div
+  class="card"
+  style="width: 20rem;"
+  [class.border-success]="offer.confirmed"
+>
+  <div class="card-body overflow-scroll">
+    <h5 class="card-title fs-6 text-nowrap fw-bold mb-1"><i class="fa-solid fa-briefcase"></i>&nbsp;{{offer.title}}</h5>
+    <hr>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-user-check"></i>&nbsp;{{offer.publisher}}</h6>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-building"></i>&nbsp;{{offer.companyName}}</h6>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-map-marked-alt"></i>&nbsp;{{offer.companyLocation}}</h6>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-globe"></i>&nbsp;{{offer.companyWebSite}}</h6>
+    <hr>
+    <p class="card-text">{{offer.description}}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="navigateToPositions()" class="btn-positions mt-2">Available Positions</button>
+  </div>
+</div>

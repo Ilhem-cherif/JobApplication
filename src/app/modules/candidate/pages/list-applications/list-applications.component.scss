@@ -1,0 +1,18 @@
+.table-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 1rem 0;
+}
+.table {
+  width: 100%;
+  border-collapse:collapse;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.home-image {
+  width: 100%;
+  height: auto;
+}
+.title-container{
+  background-color: rgb(75, 196, 155);
+}

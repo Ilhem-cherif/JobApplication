@@ -1,0 +1,24 @@
+<div
+  class="card"
+  style="width: 20rem;"
+>
+  <div class="card-body overflow-scroll">
+    <h5 class="card-title fs-6 text-nowrap fw-bold mb-1"><i class="fa-solid fa-briefcase"></i>&nbsp;{{position.title}}</h5>
+    <hr>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-map-marked-alt"></i>&nbsp;{{position.location}}</h6>
+    <br>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1"><i class="fa-solid fa-dollar-sign"></i>&nbsp;{{position.salary}}</h6>
+    <hr>
+    <p class="card-text"><i class="fa-solid fa-check-circle"></i>&nbsp; <strong>Requirements: </strong>{{position.requirements}}</p>
+    <hr>
+    <p class="card-text"><i class="fa-solid fa-tools"></i>&nbsp; <strong>Skills: </strong>{{position.skills}}</p>
+    <hr>
+    <p class="card-text"><i class="fa-solid fa-align-left"></i>&nbsp; <strong>Description: </strong>{{position.description}}</p>
+    <hr>
+  </div>
+  <div class="button-container">
+    <button (click)="navigateToApplication()" class="btn-positions mt-2">See applications</button>
+    <button (click)="navigateToUpdate()" class="btn-positions mt-2">Update Position</button>
+  </div>
+</div>
+

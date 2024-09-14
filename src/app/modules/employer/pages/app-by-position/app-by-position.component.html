@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="title-container">
+  <h2 class="text-center">All Applications</h2>
+  <hr>
+  </div>
+  <div *ngIf="errorMsg" class="alert alert-danger">{{ errorMsg }}</div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>CV File Name</th>
+        <th>Status</th>
+        <th>Submission Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let application of applications">
+        <td>
+          <a href="javascript:void(0)" (click)="downloadCv(application.id!, application.cvName!)">
+            {{ application.cvName }}
+          </a>
+        </td>
+        <td>
+          <select [(ngModel)]="application.status" (change)="updateStatus(application.id!, application.status!)" class="form-select">
+            <option value="InProgress">In Progress</option>
+            <option value="Accepted">Accepted</option>
+            <option value="Refused">Refused</option>
+          </select>
+        </td>
+        <td>{{ application.submittedDate| date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

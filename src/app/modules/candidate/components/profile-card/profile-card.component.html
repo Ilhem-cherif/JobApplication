@@ -1,0 +1,20 @@
+<div
+  class="card"
+  style="width: 30rem;"
+>
+  <div class="card-body">
+    <p class="card-title fs-6 text-nowrap fw-bold mb-1"><strong>First Name: </strong>{{profile.firstName}}</p>
+    <hr>
+    <p class="card-title fs-6 text-nowrap fw-bold mb-1"><strong>Last Name: </strong>{{profile.lastName}}</p>
+    <hr>
+    <p class="card-text"><strong>Personal Resume: </strong>{{profile.personalResume}}</p>
+    <hr>
+    <p class="card-title fs-6 text-nowrap fw-bold mb-1"><strong>Phone Number: </strong>{{profile.phoneNumber}}</p>
+    <hr>
+    <p class="card-title fs-6 text-nowrap fw-bold mb-1"><strong>Age: </strong>{{profile.age}}</p>
+  </div>
+  <div class="button-container">
+    <button (click)="Update()" class="btn-positions mt-2">Update</button>
+  </div>
+</div>
+

@@ -1,0 +1,24 @@
+<div
+  class="card"
+  style="width: 20rem;"
+>
+  <div class="card-body overflow-scroll">
+    <h5 class="card-title fs-6 text-nowrap fw-bold mb-1"><i class="fa-solid fa-briefcase"></i>&nbsp;{{offer.title}}</h5>
+    <hr>
+    <p class="card-text">{{offer.description}}</p>
+    <hr>
+    <h6 class="card-subtitle fs-6 text-secondary mb-1">
+      <i class="fa-solid fa-check-double"></i>&nbsp;Confirmed: 
+      <span [class.text-success]="offer.confirmed" [class.text-danger]="!offer.confirmed">
+        {{ offer.confirmed ? 'Yes' : 'No' }}
+        <i *ngIf="offer.confirmed" class="fa-solid fa-check-circle"></i>
+        <i *ngIf="!offer.confirmed" class="fa-solid fa-times-circle"></i>
+      </span>
+    </h6>
+  </div>
+  <div class="button-container">
+    <button (click)="navigateToPositions()" class="btn-positions mt-2">Add Positions</button>
+    <button (click)="navigateToUpdate()" class="btn-positions mt-2">Update Offer</button>
+  </div>
+</div>
+

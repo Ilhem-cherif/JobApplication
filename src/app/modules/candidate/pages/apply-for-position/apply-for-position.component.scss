@@ -1,0 +1,13 @@
+.btn-color {
+  background-color: #1ce1ac;
+  color: #fff;
+  border: 1px solid #1ce1ac;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+}
+.btn-color:hover {
+  background-color: #14af86;
+  border-color: #14af86;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
