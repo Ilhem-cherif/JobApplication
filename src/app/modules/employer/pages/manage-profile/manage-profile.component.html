@@ -1,0 +1,39 @@
+<div class="container h-100 d-flex justify-content-center align-items-center">
+  <div class="p-4 bg-light rounded shadow-sm col-md-8 col-lg-6">
+    <h2 class="text-center">Update profile</h2>
+    <hr>
+    <div class="alert alert-danger mt-2" role="alert" *ngIf="errorMsg.length">
+      <p class="p-0 m-0" *ngFor="let msg of errorMsg">{{msg}}</p>
+    </div>
+    <form class="row g-3">
+      <div class="col-12">
+        <label for="name" class="form-label">Entreprise Name</label>
+        <input [(ngModel)]="profileRequest.entrepriseName" type="text" class="form-control" id="name" name="title"
+               placeholder="Entreprise name">
+      </div>
+      <div class="col-12">
+        <label for="description" class="form-label">Entreprise Description</label>
+        <textarea [(ngModel)]="profileRequest.entrepriseDescription" rows="4" class="form-control" id="description" name="description"
+                  placeholder="type the description"></textarea>
+      </div>
+      <div class="col-12">
+        <label for="location" class="form-label">Entreprise Location</label>
+        <input [(ngModel)]="profileRequest.entrepriseLocation" type="text" class="form-control" id="location" name="location"
+                  placeholder="type the location">
+      </div>
+      <div class="col-12">
+        <label for="website" class="form-label">Entreprise Website</label>
+        <input [(ngModel)]="profileRequest.entrepriseWebsite" type="text" class="form-control" id="website" name="website"
+                  placeholder="type the website">
+      </div>
+      <div class="d-flex justify-content-end gap-2 col-12">
+        <button (click)="saveProfile()" type="submit" class="btn btn-outline-primary btn-color">
+          <i class="fas fa-save"></i>&nbsp;Save
+        </button>
+        <a routerLink="/employers/my-profile" type="submit" class="btn btn-link btn text-danger">
+          <i class="fas fa-times"></i>&nbsp;Cancel
+        </a>
+      </div>
+    </form>
+  </div>
+</div>

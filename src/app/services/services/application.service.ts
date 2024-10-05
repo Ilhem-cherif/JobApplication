@@ -10,6 +10,7 @@ import { ApiConfiguration } from '../api-configuration';
 import { StrictHttpResponse } from '../strict-http-response';
 
 import { ApplicationResponse } from '../models/application-response';
+import { downloadCv } from '../fn/application/download-cv';
 import { DownloadCv$Params } from '../fn/application/download-cv';
 import { findAllApplicationByCandidate } from '../fn/application/find-all-application-by-candidate';
 import { FindAllApplicationByCandidate$Params } from '../fn/application/find-all-application-by-candidate';

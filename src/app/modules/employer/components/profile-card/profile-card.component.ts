@@ -28,7 +28,7 @@ export class ProfileCardComponent {
 
 
   Update() {
-  throw new Error('Method not implemented.');
+    this.router.navigate(['/employers/manage-profile', this._profile.id]);
   }
 
 }

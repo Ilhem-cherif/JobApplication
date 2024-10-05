@@ -6,4 +6,5 @@ export interface EntrepriseProfileResponse {
   entrepriseLogo?: string;
   entrepriseName?: string;
   entrepriseWebsite?: string;
+  id?: number;
 }

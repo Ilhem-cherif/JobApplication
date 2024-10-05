@@ -9,6 +9,7 @@ import { authGuard } from '../../services/guard/auth.guard';
 import { AppByPositionComponent } from './pages/app-by-position/app-by-position.component';
 import { EntrepriseProfileComponent } from './pages/entreprise-profile/entreprise-profile.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ManageProfileComponent } from './pages/manage-profile/manage-profile.component';
 
 const routes: Routes = [
   {
@@ -60,7 +61,12 @@ const routes: Routes = [
         path:'my-profile',
         component: EntrepriseProfileComponent,
         canActivate: [authGuard]
-      }
+      },
+      {
+        path: 'manage-profile/:profileId',
+        component:ManageProfileComponent,
+        canActivate: [authGuard]
+      },
     ]
   }
   
