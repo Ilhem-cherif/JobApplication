@@ -16,19 +16,19 @@
            <br>
          <!-- Email input -->
          <div data-mdb-input-init class="form-outline mb-4">
-           <label class="form-label" for="form3Example3">Email</label>
-           <input [(ngModel)]="registerRequest.email" type="email" id="form3Example3" name="email" class="form-control form-control-lg"
+           <label class="form-label" for="form3Example1">Email</label>
+           <input [(ngModel)]="registerRequest.email" type="email" id="form3Example1" name="email" class="form-control form-control-lg"
              placeholder="Enter a valid email address" />
          </div>
 
          <div data-mdb-input-init class="form-outline mb-3">
-           <label class="form-label" for="form3Example4">First Name</label>
-           <input [(ngModel)]="registerRequest.firstname" type="text" id="form3Example4" name="firstname" class="form-control form-control-lg"
+           <label class="form-label" for="form3Example2">First Name</label>
+           <input [(ngModel)]="registerRequest.firstname" type="text" id="form3Example2" name="firstname" class="form-control form-control-lg"
              placeholder="Enter your first name" />
          </div>
          <div data-mdb-input-init class="form-outline mb-3">
-          <label class="form-label" for="form3Example4">Last Name</label>
-          <input [(ngModel)]="registerRequest.lastname" type="text" id="form3Example4" name="lasttname" class="form-control form-control-lg"
+          <label class="form-label" for="form3Example3">Last Name</label>
+          <input [(ngModel)]="registerRequest.lastname" type="text" id="form3Example3" name="lasttname" class="form-control form-control-lg"
             placeholder="Enter your last name" />
         </div>
         <div data-mdb-input-init class="form-outline mb-3">
@@ -37,47 +37,47 @@
             placeholder="Enter password" />
         </div>
         <div data-mdb-input-init class="form-outline mb-3">
-          <label class="form-label" for="form3Example4">Role</label>
+          <label class="form-label" for="role">Role</label>
           <select id="role" class="form-control" [(ngModel)]="registerRequest.role" name="role" required>
             <option *ngFor="let role of ['CANDIDATE', 'EMPLOYER']" [value]="role">{{ role }}</option>
           </select>
         </div>
         <div *ngIf="registerRequest.role === 'CANDIDATE'">
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Personal Resume</label>
-            <input [(ngModel)]="registerRequest.personalResume" type="text" id="form3Example4" name="personalResume" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example6">Personal Resume</label>
+            <input [(ngModel)]="registerRequest.personalResume" type="text" id="form3Example6" name="personalResume" class="form-control form-control-lg"
               placeholder="Enter personal resume" />
           </div>
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Phone Number</label>
-            <input [(ngModel)]="registerRequest.phoneNumber" type="text" id="form3Example4" name="phoneNumber" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example7">Phone Number</label>
+            <input [(ngModel)]="registerRequest.phoneNumber" type="text" id="form3Example7" name="phoneNumber" class="form-control form-control-lg"
               placeholder="Enter your phone number" />
           </div>
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Age</label>
-            <input [(ngModel)]="registerRequest.age" type="number" id="form3Example4" name="age" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example8">Age</label>
+            <input [(ngModel)]="registerRequest.age" type="number" id="form3Example8" name="age" class="form-control form-control-lg"
               placeholder="Enter your age" />
           </div>
         </div>
         <div *ngIf="registerRequest.role === 'EMPLOYER'">
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Entreprise Name</label>
-            <input [(ngModel)]="registerRequest.entrepriseName" type="text" id="form3Example4" name="entrepriseName" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example9">Entreprise Name</label>
+            <input [(ngModel)]="registerRequest.entrepriseName" type="text" id="form3Example9" name="entrepriseName" class="form-control form-control-lg"
               placeholder="Enter the entreprise name" />
           </div>
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Entreprise Description</label>
-            <input [(ngModel)]="registerRequest.entrepriseDescription" type="text" id="form3Example4" name="entrepriseDescription" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example10">Entreprise Description</label>
+            <input [(ngModel)]="registerRequest.entrepriseDescription" type="text" id="form3Example10" name="entrepriseDescription" class="form-control form-control-lg"
               placeholder="Enter the entreprise description" />
           </div>
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Entreprise Website</label>
-            <input [(ngModel)]="registerRequest.entrepriseWebsite" type="text" id="form3Example4" name="entrepriseWebsite" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example11">Entreprise Website</label>
+            <input [(ngModel)]="registerRequest.entrepriseWebsite" type="text" id="form3Example11" name="entrepriseWebsite" class="form-control form-control-lg"
               placeholder="Enter the entreprise Website" />
           </div>
           <div data-mdb-input-init class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Entreprise Location</label>
-            <input [(ngModel)]="registerRequest.entrepriseLocation" type="text" id="form3Example4" name="entrepriseLocation" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example12">Entreprise Location</label>
+            <input [(ngModel)]="registerRequest.entrepriseLocation" type="text" id="form3Example12" name="entrepriseLocation" class="form-control form-control-lg"
               placeholder="Enter the entreprise location" />
           </div>
         </div>
